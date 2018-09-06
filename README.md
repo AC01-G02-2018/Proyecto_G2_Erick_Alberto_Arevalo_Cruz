@@ -1,1 +1,0 @@
-# Proyecto_G2_Erick_Alberto_Arevalo_Cruz
