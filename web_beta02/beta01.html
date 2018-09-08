@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -24,7 +22,8 @@
             <img src="img/fy.png" alt="logo" id="logo2">
 
         </header>
-        <nav class="navbar navbar-expand-sm justify-content-center container ">
+        <!-- NavBar-->
+        <nav class="navbar navbar-expand-sm justify-content-center container">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Novedades</a>
@@ -37,62 +36,55 @@
                 </li>
             </ul>
         </nav>
-
-        <section class="container">
-            <div class="row"></div>
-                <article class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
-                    <h1>Novedades</h1>
-                    <hr>
-                    <section>
-                        <img src="img/fy.png" alt="">
-                        <br>
-                        <h2>Tema:</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sequi beatae ipsum. Ea a cupiditate vero perspiciatis sapiente
-                            quisquam error architecto, accusamus, ullam sit animi possimus quae minima perferendis voluptatem?
-                        </p>
-                    </section>
-                    <!-- <section>
-                            <img src="img/fy.png" alt="">
-                            <br>
-                            <h2>Tema:</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sequi beatae ipsum. Ea a cupiditate vero perspiciatis sapiente
-                                quisquam error architecto, accusamus, ullam sit animi possimus quae minima perferendis voluptatem?
-                            </p>
-                            
-                            <img src="img/fy.png" alt="">
-                            <br>
-                            <h2>Tema:</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sequi beatae ipsum. Ea a cupiditate vero perspiciatis sapiente
-                                quisquam error architecto, accusamus, ullam sit animi possimus quae minima perferendis voluptatem?
-                            </p>
-                        </section> -->
-                </article>
-                <aside class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-                    fddfdf
-                </aside>
-
-            </div>
-        </section>
-
     </section>
-    <script>
+    <!-- Novedades-->
+    <section class="container">
+        <h1>Novedades</h1>
+        <hr>
+        <section class="container">
+            <section class="row">
+                <section class="col-sm-5 text-dark">
+                    <img src="img/fy.png" alt="">
+                    <h2>Tema:</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </section>
+                <section class="col-sm-5 text-dark">
+                        <img src="img/fy.png" alt="">
+                        <h2>Tema:</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </section>
+                <section class="col-sm-2 bg-dark text-white">
+                    <h2>Articulos</h2>
+                   <ol>
+                       <li>top1</li>
+                       <li>top1</li>
+                       <li>top1</li>
+                       <li>top1</li>
+                       <li>top1</li>
+                       <li>top1</li>
+                   </ol>
+                </section>
+            </section>
+        </section>
+    </section>
 
+    <script>
         //tomamos la altura   
         var altura = $('nav').offset().top;
         //verificamos el scroll
         $(window).on('scroll', function () {
             //si escroll es mayor a altura
             if ($(window).scrollTop() > altura) {
-            
+
                 $("nav").addClass('fixed-top');
             } else {
                 $('nav').removeClass('fixed-top');
             }
         });
     </script>
+
 </body>
 
 </html>

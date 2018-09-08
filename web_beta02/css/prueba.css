@@ -1,0 +1,14 @@
+header{
+    width: 90%;
+    height: 150px;
+    background-color: rgb(196, 28, 28);
+    color: white;
+    text-align: center;
+}
+#lo1{
+    float: left;
+}
+#lo2{
+    float: right;
+}
+
